@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(51, 45, 45), rgb(117, 117, 115));
+}
+.container {
+    width: 36rem;
+    height: 36rem;
+    border: 2px solid white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(175, 171, 200);
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.grid-cell.active {
+    background-color: black;
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+}
+
+#grid-length {
+    -webkit-appearance: none;
+    background: black;
+    outline: none;
+    border-radius: 50px;
+}
