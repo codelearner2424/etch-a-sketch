@@ -6,6 +6,16 @@ html {
     height: 100%;
     background-image: linear-gradient(to bottom right, rgb(51, 45, 45), rgb(117, 117, 115));
 }
+
+body {
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: rgb(137, 180, 169)
+}
 .container {
     width: 36rem;
     height: 36rem;
@@ -37,4 +47,20 @@ h1 {
     background: black;
     outline: none;
     border-radius: 50px;
+    align-self: center;
+    margin: 1rem
+}
+
+#grid-length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(189, 229, 189); /* Green thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#grid-display {
+    color:rgb(137, 180, 169)
 }

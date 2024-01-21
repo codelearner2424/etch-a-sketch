@@ -1,8 +1,11 @@
 const container = document.querySelector(".container");
 const gridLength = document.querySelector("#grid-length");
+const gridDisplay = document.querySelector("#grid-display");
 
 
 function createGrid(n) {
+    gridDisplay.textContent = `${gridLength.value} by ${gridLength.value}`;
+
     for (let i = 0; i < n; i++) {
         const row = document.createElement("div");
         row.classList.add("row");
